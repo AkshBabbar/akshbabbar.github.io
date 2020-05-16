@@ -4,11 +4,13 @@
 }
 
 body {
-    background-color: #000000;
+    background: linear-gradient(to right, #000000, #434343);
+    background-size: 200% 100%;
 }
 
 header {
     text-align: center;
+    background: #000000;
 }
 
 #logo {
@@ -19,4 +21,40 @@ header {
 #background-image {
     width: 100%;
     height: auto;
+}
+
+#survey {
+    width: 30%;
+    display: block;
+    margin: 5% auto;
+    background: #fffafa;
+    padding: 1rem 1rem 1rem 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.text-section {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.name>input {
+    height: 2.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: large;
+    outline: none;
+}
+
+.name>input {
+    height: 2.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: large;
+}
+
+.gender {
+    padding: 1rem 0 1rem 0;
+}
+
+.gender>input {
+    margin: 0 0 0 1.5rem;
 }

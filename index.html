@@ -15,14 +15,41 @@
         </a>
     </header>
     <div>
-        <img src="images/Background.png" id="background-image">
+        <a href="https://dbrand.com/shop/special-edition/robot-camo">
+            <img src="images/Background.png" id="background-image">
+        </a>
     </div>
 
-    <div class="text-section">
-        <h1>Your Feedback helps us improve!</h1>
-    </div>
+    <form name="survey" id="survey">
+        <div class="text-section">
+            <h1>We value your feedback!</h1>
+        </div>
+        <div class="name">
+            First Name :<input type="text" name="firstname"><br> Last Name :<input type="text" name="lastname">
+        </div>
 
-    <form>
+        <div class="gender">
+            Gender :
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div class="devices">
+            <label for="device">What device do you use :</label>
+            <select id="device">
+                <option value="Apple">Apple</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Huawei">Huawei</option>
+            </select>
+        </div>
+
+        <div class="additional-comments">
+            <label for="comments">Additional Comments</label><br>
+            <textarea id="comments" rows="5" cols="45"></textarea>
+        </div>
+
 
     </form>
 
