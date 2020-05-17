@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+::placeholder,
+select {
+    color: #000000;
+    font-family: 'Ruda', Bebas Neue, Impact, sans-serif;
+    padding-left: 5px;
+}
+
 body {
     background: #ffffff;
 }
@@ -21,16 +28,6 @@ header {
     width: 100%;
 }
 
-#survey {
-    width: 35%;
-    display: block;
-    margin: 1.5rem auto;
-    background: #ffffff;
-    padding: 1rem 1rem 1rem 3rem;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    border-radius: 20px;
-}
-
 .text-section {
     text-align: center;
     padding: 3rem 0 3rem 0;
@@ -39,6 +36,7 @@ header {
     font-weight: bold;
     line-height: 1;
     background: #f8f8fa;
+    text-transform: uppercase;
 }
 
 .underline {
@@ -47,23 +45,115 @@ header {
     text-decoration-color: #f78402;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3rem;
+}
+
+.grid-item-1 {
+    width: 100%;
+    text-align: center;
+}
+
+#website-ss {
+    width: 90%;
+}
+
+#survey {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    font-family: 'Ruda', Bebas Neue, Impact, sans-serif;
+}
+
 .name>input {
-    height: 2.5rem;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    font-size: large;
+    height: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    font-size: medium;
     outline: none;
+    color: #000000;
 }
 
-.name>input {
-    height: 2.5rem;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    font-size: large;
+input[type=radio],
+input[type=checkbox] {
+    padding: 7px;
+    margin-right: 0.2rem;
+    -webkit-appearance: none;
+    outline: 0.1em solid #000000;
+    outline-offset: 0.1em;
 }
 
-.gender {
-    padding: 1rem 0 1rem 0;
+input[type=radio]:checked,
+input[type=checkbox]:checked {
+    display: inline-block;
+    background-color: #f78402;
 }
 
-.gender>input {
-    margin: 0 0 0 1.5rem;
+.contact,
+.devices,
+.social,
+.review,
+.additional-comments {
+    margin-top: 1.5rem;
+}
+
+.radio {
+    margin-top: 0.5rem;
+}
+
+.alt-option {
+    margin-left: 2rem;
+}
+
+select {
+    width: 35%;
+    height: 35px;
+    background-color: #ffffff;
+    font-size: 20px;
+    margin-top: 0.5rem;
+    outline: none;
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+}
+
+.likert {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    margin-top: 0.3rem;
+}
+
+.likert>.likert-item {
+    text-align: center;
+    font-size: 15px;
+}
+
+.likert>.likert-item>label {
+    padding-top: 1rem;
+}
+
+.additional-comments>textarea {
+    margin-top: 0.5rem;
+    width: 70%;
+    height: 70px;
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    outline: none;
+    font-size: small;
+    font-family: 'Ruda', Bebas Neue, Impact, sans-serif;
+    padding: 1rem;
+}
+
+.submit {
+    width: 20%;
+    height: 50px;
+    margin-top: 1rem;
+    background: none;
+    font-family: 'Ruda', Bebas Neue, Impact, sans-serif;
+    font-size: medium;
+    color: #ffffff;
+    background-color: #f78402;
+    border: none;
+    outline: none;
 }

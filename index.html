@@ -16,49 +16,99 @@
         </a>
     </header>
     <div>
-        <a href="https://dbrand.com/shop/special-edition/robot-camo">
+        <a href="https://dbrand.com/shop/special-edition/robot-camo" target="blank">
             <img src="images/Background.png" id="background-image">
         </a>
     </div>
     <div class="text-section">
-        <p>Lea<span class="underline">ve a Rev</span>iew</p>
+        <p>Rev<span class="underline">iew our new Webs</span>ite</p>
     </div>
 
     <div class="grid-container">
+        <div class="grid-item-1">
+            <a href="https://dbrand.com/shop/special-edition/robot" target="_blank">
+                <img src="images/websiteSS.png" id="website-ss">
+                <img src="images/websiteSS2.png" id="website-ss">
+            </a>
+        </div>
         <div class="grid-item">
-            <img src="images/robot-feature-01.jpg" id="background-image">
+            <form name="survey " id="survey">
+
+                <div class="name ">
+                    <input type="text" name="firstname" placeholder="FIRST NAME">
+                    <input type="text" name="lastname" placeholder="LAST NAME">
+                </div>
+
+                <div class="name">
+                    <input type="text" name="email" placeholder="EMAIL">
+                    <input type="text" name="phone" placeholder="PHONE">
+                </div>
+
+                <div class="contact">
+                    PREFERRED METHOD OF CONTACT :<br>
+                    <div class="radio">
+                        <input type="radio" name="contact" value="email">
+                        <label for="male">EMAIL</label>
+                        <input type="radio" class="alt-option" name="contact" value="phone">
+                        <label for="female">PHONE</label>
+                    </div>
+                </div>
+
+                <div class="devices">
+                    <label for="device ">WHAT DEVICE DO YOU USE :</label><br>
+                    <select id="device ">
+                        <option value="Apple ">Apple</option>
+                        <option value="Samsung ">Samsung</option>
+                        <option value="Samsung ">One Plus</option>
+                        <option value="Huawei ">Huawei</option>
+                        <option value="Huawei ">MOTOROLA</option>
+                        <option value="Huawei ">OTHER</option>
+                    </select>
+                </div>
+
+                <div class="social">
+                    HOW DID YOU HEAR ABOUT US:<br>
+                    <input type="checkbox" name="facebook">
+                    <label for="facebook">FACEBOOK</label>
+                    <input type="checkbox" class="alt-option" name="youtube">
+                    <label for="youtube">YOUTUBE</label>
+                    <input type="checkbox" class="alt-option" name="twitter">
+                    <label for="twitter">TWITTER</label>
+                    <input type="checkbox" class="alt-option" name="other">
+                    <label for="other">OTHER</label>
+                </div>
+
+                <div class="review">
+                    THE WEBSITE IS REALLY EASY TO NAVIGATE :
+                    <div class="likert">
+                        <div class="likert-item">
+                            <input type="radio" name="review" /><br><label>STRONGLY<br>AGREE</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="review" /><br><label>AGREE</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="review" /><br><label>NEUTRAL</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="review" /><br><label>DISAGREE</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="review" /><br><label>STRONGLY<br>DISAGREE</label>
+                        </div>
+                    </div>
+
+                    <div class="additional-comments ">
+                        <label for="comments ">ADDITIONAL COMMENTS :</label><br>
+                        <textarea id="comments "></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="submit">SUBMIT</button>
+                    </div>
+
+            </form>
+            </div>
         </div>
-    </div>
-
-    <form name="survey" id="survey">
-        <div class="name">
-            First Name :<input type="text" name="firstname"><br> Last Name :<input type="text" name="lastname">
-        </div>
-
-        <div class="gender">
-            Gender :
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-        </div>
-
-        <div class="devices">
-            <label for="device">What device do you use :</label>
-            <select id="device">
-                <option value="Apple">Apple</option>
-                <option value="Samsung">Samsung</option>
-                <option value="Huawei">Huawei</option>
-            </select>
-        </div>
-
-        <div class="additional-comments">
-            <label for="comments">Additional Comments</label><br>
-            <textarea id="comments" rows="5" cols="45"></textarea>
-        </div>
-
-
-    </form>
 
 </body>
 
