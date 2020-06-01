@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1 Survey</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Ruda' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <a href="https://dbrand.com/shop/special-edition/robot-camo" target="blank">
+            <img src="images/logo.png" id="logo">
+        </a>
+    </header>
+    <div>
+        <a href="https://dbrand.com/shop/special-edition/robot-camo" target="blank">
+            <img src="images/Background.png" id="background-image">
+        </a>
+    </div>
+    <div class="text-section">
+        <p>Rev<span class="underline">iew our new Webs</span>ite</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item-1">
+            <a href="https://dbrand.com/shop/special-edition/robot" target="_blank">
+                <img src="images/websiteSS.png" class="website-ss">
+                <img src="images/websiteSS3.png" class="website-ss">
+                <img src="images/websiteSS5.png" class="website-ss">
+                <img src="images/websiteSS6.png" class="website-ss">
+            </a>
+        </div>
+        <div class="grid-item-2">
+            <form name="survey " id="survey">
+                <div class="heading">
+                    <p>
+                        Feedback Form!
+                    </p>
+                </div>
+                <div class="description question-spacing">
+                    <p>
+                        Your feedback is highly appreciated and will help us to improve our ability to serve you and other users of our web sites.
+                    </p>
+                </div>
+                <div class="name question-spacing">
+                    <input type="text" name="firstname" placeholder="FIRST NAME">
+                    <input type="text" name="lastname" class="option-spacing" placeholder="LAST NAME">
+                </div>
+
+                <div class="name question-spacing">
+                    <input type="text" name="email" placeholder="EMAIL">
+                    <input type="text" class="option-spacing" name="phone" placeholder="PHONE">
+                </div>
+
+                <div class="contact question-spacing">
+                    PREFERRED METHOD OF CONTACT :<br>
+                    <div class="radio int-spacing">
+                        <input type="radio" name="contact" value="email">
+                        <label for="male">EMAIL</label>
+                        <input type="radio" class="alt-option option-spacing" name="contact" value="phone">
+                        <label for="female">PHONE</label>
+                    </div>
+                </div>
+
+                <div class="devices question-spacing">
+                    <label for="device ">WHAT DEVICE DO YOU USE :</label><br>
+                    <select id="device" class="int-spacing">
+                        <option value="Apple ">Apple</option>
+                        <option value="Samsung ">Samsung</option>
+                        <option value="Samsung ">One Plus</option>
+                        <option value="Huawei ">Huawei</option>
+                        <option value="Huawei ">MOTOROLA</option>
+                        <option value="Huawei ">OTHER</option>
+                    </select>
+                </div>
+
+                <div class="social question-spacing">
+                    HOW DID YOU HEAR ABOUT US:<br>
+                    <div class="social-dets int-spacing">
+                        <input type="checkbox" name="facebook">
+                        <label for="facebook">FACEBOOK</label>
+                        <input type="checkbox" class="alt-option option-spacing" name="youtube">
+                        <label for="youtube">YOUTUBE</label>
+                        <input type="checkbox" class="alt-option option-spacing" name="twitter">
+                        <label for="twitter">TWITTER</label>
+                        <input type="checkbox" class="alt-option option-spacing" name="other">
+                        <label for="other">OTHER</label>
+                    </div>
+                </div>
+
+                <div class="review question-spacing">
+                    THE WEBSITE IS REALLY EASY TO NAVIGATE :
+                    <div class="likert int-spacing">
+                        <div class="likert-item">
+                            <input type="radio" name="likert" /><br><label>STRONGLY AGREE</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="likert" /><br><label>AGREE</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="likert" /><br><label>NEUTRAL</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="likert" /><br><label>DISAGREE</label>
+                        </div>
+                        <div class="likert-item">
+                            <input type="radio" name="likert" /><br><label>STRONGLY DISAGREE</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-comments question-spacing">
+                    <label for="comments ">ADDITIONAL COMMENTS :</label><br>
+                    <textarea id="comments" class="int-spacing"></textarea>
+                </div>
+                <div class="btn question-spacing">
+                    <button type="button" class="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Website designed by Aksh Babbar</p>
+    </footer>
+
+</body>
+
+</html>
