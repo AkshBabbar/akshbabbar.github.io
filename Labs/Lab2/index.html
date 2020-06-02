@@ -20,12 +20,17 @@
         <h3>User Preferences</h3>
         <p>Tell us your preference</p>
         Choose a Category:
-        <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="None">None</option>
-	</select>
+        <div>
+            <input type="checkbox" id="vegetarian">
+            <label for="Vegetarian">Vegetarian</label><br>
+            <input type="checkbox" id="glutenFree">
+            <label for="glutenFree">Gluten Free</label><br>
+            <input type="checkbox" id="organic">
+            <label for="organic">Organic</label><br>
+            <input type="checkbox" id="none">
+            <label for="none">None</label><br>
+        </div>
+        <button class="preferences-check" onclick="populateListProductChoices('displayProduct')">Submit</button>
     </div>
 
     <div id="Products" class="tabcontent">
