@@ -90,6 +90,7 @@ function selectedItems() {
 
     // build list of selected item
     var para = document.createElement("P");
+    para.appendChild(document.createElement("br"));
     para.innerHTML = "You selected : ";
     para.appendChild(document.createElement("br"));
     for (i = 0; i < ele.length; i++) {
@@ -102,6 +103,7 @@ function selectedItems() {
 
     // add paragraph and total price
     c.appendChild(para);
+    c.appendChild(document.createElement("br"));
     c.appendChild(document.createTextNode("Total Price is : $" + getTotalPrice(chosenProducts)));
 
 }

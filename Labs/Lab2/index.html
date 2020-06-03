@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+    <!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -22,8 +22,8 @@
 
     <!-- Tab content -->
     <div id="Client" class="tabcontent">
-        <h3 class="heading">User Preferences</h3>
-        <p class="text">Tell us your preference
+        <h3 class="heading spacing">User Preferences</h3>
+        <p class="text spacing">Tell us your preference:
             <br>Choose a Category:
         </p>
         <div class="text">
@@ -40,8 +40,8 @@
     </div>
 
     <div id="Products" class="tabcontent">
-        <h3 class="heading">Your targeted products</h3>
-        <p class="text">We preselected products based on your restrictions.<br> Choose items to buy:
+        <h3 class="heading spacing">Your targeted products</h3>
+        <p class="text spacing">We preselected products based on your restrictions.<br> Choose items to buy:
         </p>
         <div id="displayProduct" class="text"></div>
         <button id="addCart" class="text" type="button" class="block" onclick="selectedItems(); openInfo(event, 'Cart')">
@@ -50,10 +50,14 @@
     </div>
 
     <div id="Cart" class="tabcontent">
-        <h3 class="heading">Cart</h3>
-        <p class="text">Here is your cart.</p>
+        <h3 class="heading spacing">Cart</h3>
+        <p class="text spacing">Here is your cart:</p>
         <div id="displayCart" class="text"></div>
     </div>
+
+    <footer>
+        <p class="footerText text">Website designed by Aksh Babbar</p>
+    </footer>
 
     <script src="scripts/groceries.js"></script>
     <script src="scripts/main.js"></script>
