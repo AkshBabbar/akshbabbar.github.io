@@ -7,6 +7,10 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 75%;
+    margin: 0 auto;
 }
 
 
@@ -44,12 +48,33 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    width: 70%;
+    margin: 0 auto;
 }
 
 header {
     text-align: center;
 }
 
+.heading {
+    font-size: 32px;
+}
+
+.text {
+    font-size: 20px;
+}
+
 #logo {
     width: 20%;
+}
+
+.preferences-check,
+#addCart {
+    display: block;
+    margin: 5% auto;
+    width: 20%;
+    height: 40px;
+    background-color: #00cc00;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

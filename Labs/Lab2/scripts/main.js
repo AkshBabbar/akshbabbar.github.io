@@ -48,6 +48,7 @@ function populateListProductChoices(slct2) {
 
     // obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, selection);
+    //sorting
     optionArray = optionArray.sort((a, b) => (a.price > b.price) ? -1 : 1);
 
     // for each item in the array, create a checkbox element, each containing information such as:
