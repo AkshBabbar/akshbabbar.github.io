@@ -48,6 +48,7 @@ function populateListProductChoices(slct2) {
 
     // obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, selection);
+    optionArray = optionArray.sort((a, b) => (a.price > b.price) ? -1 : 1);
 
     // for each item in the array, create a checkbox element, each containing information such as:
     // <input type="checkbox" name="product" value="Bread">
@@ -55,6 +56,7 @@ function populateListProductChoices(slct2) {
 
     for (i = 0; i < optionArray.length; i++) {
         var productName = optionArray[i];
+
         // create the checkbox and add in HTML DOM
         var checkbox = document.createElement("input");
         checkbox.type = "checkbox";
@@ -65,7 +67,7 @@ function populateListProductChoices(slct2) {
         // create a label for the checkbox, and also add in HTML DOM
         var label = document.createElement('label')
         label.htmlFor = productName;
-        label.appendChild(document.createTextNode(productName));
+        label.appendChild(document.createTextNode(productName + " : $" + getPrice(productName)));
         s2.appendChild(label);
 
         // create a breakline node and add in HTML DOM
@@ -91,7 +93,7 @@ function selectedItems() {
     para.appendChild(document.createElement("br"));
     for (i = 0; i < ele.length; i++) {
         if (ele[i].checked) {
-            para.appendChild(document.createTextNode(ele[i].value));
+            para.appendChild(document.createTextNode(ele[i].value + " : $" + getPrice(ele[i].value)));
             para.appendChild(document.createElement("br"));
             chosenProducts.push(ele[i].value);
         }
@@ -99,6 +101,6 @@ function selectedItems() {
 
     // add paragraph and total price
     c.appendChild(para);
-    c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+    c.appendChild(document.createTextNode("Total Price is : $" + getTotalPrice(chosenProducts)));
 
 }
