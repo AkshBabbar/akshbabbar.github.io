@@ -1,7 +1,10 @@
 $(document).ready(function() {
     $("div.card").css("display", "none");
-    var cat = localStorage.getItem("category");
-    var prefs = localStorage.getItem("prefs");
+    // var cat = localStorage.getItem("category");
+    // var prefs = localStorage.getItem("prefs");
+    var cat = Cookies.get("category");
+    var prefs = Cookies.get("prefs");
+    alert(cat);
     prefs = cat + prefs.replaceAll(",", '');
     $(prefs).css("display", "block");
 });

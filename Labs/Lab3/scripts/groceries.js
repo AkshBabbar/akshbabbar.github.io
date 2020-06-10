@@ -31,7 +31,9 @@ $(".submit").click(function() {
             alert("You cannot choose other preferences if you selected No Preference");
         }
     }
-    localStorage.setItem("category", category);
-    localStorage.setItem("prefs", preferences);
+    Cookies.set('category', category);
+    Cookies.set('prefs', preferences);
+    // localStorage.setItem("category", category);
+    // localStorage.setItem("prefs", preferences);
     window.location.href = "pages/products.html";
 });
