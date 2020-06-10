@@ -4,7 +4,7 @@ $(document).ready(function() {
     // var prefs = localStorage.getItem("prefs");
     var cat = Cookies.get("category");
     var prefs = Cookies.get("prefs");
-    alert(cat);
+    alert(prefs);
     prefs = cat + prefs.replaceAll(",", '');
     $(prefs).css("display", "block");
 });
