@@ -7,217 +7,228 @@
     <title>Document</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
+    <header>
+        <img id="logo" src=../images/logo.png>
+    </header>
     <div class="topnav">
         <a href="../index.html" />User Preferences</a>
         <a class="active" href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
     </div>
+    <div class="heading">
+        <p>We preselected items based on your preferences</p>
+        <p>Click on the items you like and it'll automatically be added to your cart</p>
+    </div>
+    <div class="accordian-container">
+        <button class="accordion vegetable-products">Vegetables<i class="fa fa-level-down"></i></button>
+        <div class="panel">
+            <div class="productsList">
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/brocolli.jpg">
+                    <div class="container">
+                        <h4><b>Brocoli</b></h4>
+                        <p>Price : $<span>2.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/carrots.png">
+                    <div class="container">
+                        <h4><b>Carrots</b></h4>
+                        <p>Price : $<span>3.50</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/onions.jpg">
+                    <div class="container">
+                        <h4><b>Onions</b></h4>
+                        <p>Price : $<span>3.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/lettuce.jpg">
+                    <div class="container">
+                        <h4><b>Lettuce</b></h4>
+                        <p>Price : $<span>4.50</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <button class="accordion vegetable-products">Vegetables</button>
-    <div class="panel">
-        <div class="productsList">
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/brocolli.jpg">
-                <div class="container">
-                    <h4><b>Brocoli</b></h4>
-                    <p>Price : $<span>2.99</span></p>
+        <button class="accordion fruit-products">Fruits<i class="fa fa-level-down"></i></button>
+        <div class="panel">
+            <div class="productsList">
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/apples.jpg">
+                    <div class="container">
+                        <h4><b>Apples</b></h4>
+                        <p>Price : $<span>3.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/mangos.jpg">
+                    <div class="container">
+                        <h4><b>Mangos</b></h4>
+                        <p>Price : $<span>4.50</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/banana.jpg">
+                    <div class="container">
+                        <h4><b>Banana</b></h4>
+                        <p>Price : $<span>5.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/orange.jpg">
+                    <div class="container">
+                        <h4><b>Orange</b></h4>
+                        <p>Price : $<span>5.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree organic none">
+                    <img src="../images/grapes.jpg">
+                    <div class="container">
+                        <h4><b>Grapes</b></h4>
+                        <p>Price : $<span>6.50</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/carrots.png">
-                <div class="container">
-                    <h4><b>Carrots</b></h4>
-                    <p>Price : $<span>3.50</span></p>
+        </div>
+
+        <button class="accordion meat-products">Meat<i class="fa fa-level-down"></i></button>
+        <div class="panel">
+            <div class="productsList">
+                <div class="card nonveg nop glutenFree lactoseFree organic none">
+                    <img src="../images/chicken.jpg">
+                    <div class="container">
+                        <h4><b>Chicken</b></h4>
+                        <p>Price : $<span>10.99</span></p>
+                    </div>
+                </div>
+                <div class="card nonveg nop glutenFree lactoseFree organic none">
+                    <img src="../images/beef.jpg">
+                    <div class="container">
+                        <h4><b>Beef</b></h4>
+                        <p>Price : $<span>11.00</span></p>
+                    </div>
+                </div>
+                <div class="card nonveg nop glutenFree lactoseFree none">
+                    <img src="../images/sausages.jpg">
+                    <div class="container">
+                        <h4><b>Sausages</b></h4>
+                        <p>Price : $<span>12.00</span></p>
+                    </div>
+                </div>
+                <div class="card nonveg nop glutenFree none">
+                    <img src="../images/bacon.jpg">
+                    <div class="container">
+                        <h4><b>Bacon</b></h4>
+                        <p>Price : $<span>14.99</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/onions.jpg">
-                <div class="container">
-                    <h4><b>Onions</b></h4>
-                    <p>Price : $<span>3.99</span></p>
+        </div>
+
+        <button class="accordion">Dairy<i class="fa fa-level-down"></i></button>
+        <div class="panel">
+            <div class="productsList">
+                <div class="card veg nop none">
+                    <img src="../images/milk.jpg">
+                    <div class="container">
+                        <h4><b>Milk</b></h4>
+                        <p>Price : $<span>4.99</span></p>
+                    </div>
+                </div>
+                <div class="card nonveg nop glutenFree lactoseFree none">
+                    <img src="../images/eggs.jpg">
+                    <div class="container">
+                        <h4><b>Eggs</b></h4>
+                        <p>Price : $<span>6.00</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree none">
+                    <img src="../images/cheese.jpg">
+                    <div class="container">
+                        <h4><b>Cheese</b></h4>
+                        <p>Price : $<span>6.50</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop none">
+                    <img src="../images/yogurt.jpg">
+                    <div class="container">
+                        <h4><b>Yogurt</b></h4>
+                        <p>Price : $<span>7.00</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/lettuce.jpg">
-                <div class="container">
-                    <h4><b>Lettuce</b></h4>
-                    <p>Price : $<span>4.50</span></p>
+        </div>
+
+        <button class="accordion">Bakery<i class="fa fa-level-down"></i></button>
+        <div class="panel">
+            <div class="productsList">
+                <div class="card veg nop glutenFree lactoseFree none">
+                    <img src="../images/cake.jpg">
+                    <div class="container">
+                        <h4><b>Cake</b></h4>
+                        <p>Price : $<span>9.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree none">
+                    <img src="../images/muffins.jpg">
+                    <div class="container">
+                        <h4><b>Muffins</b></h4>
+                        <p>Price : $<span>10.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Beverages<i class="fa fa-level-down"></i></button>
+        <div class="panel">
+            <div class="productsList">
+                <div class="card veg nop glutenFree lactoseFree none">
+                    <img src="../images/coke.jpg">
+                    <div class="container">
+                        <h4><b>Coke</b></h4>
+                        <p>Price : $<span>0.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree none">
+                    <img src="../images/sprite.jpg">
+                    <div class="container">
+                        <h4><b>Sprite</b></h4>
+                        <p>Price : $<span>0.99</span></p>
+                    </div>
+                </div>
+                <div class="card veg nop glutenFree lactoseFree none">
+                    <img src="../images/juice.jpg">
+                    <div class="container">
+                        <h4><b>Orange Juice</b></h4>
+                        <p>Price : $<span>1.99</span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <button class="accordion fruit-products">Fruits</button>
-    <div class="panel">
-        <div class="productsList">
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/apples.jpg">
-                <div class="container">
-                    <h4><b>Apples</b></h4>
-                    <p>Price : $<span>3.99</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/mangos.jpg">
-                <div class="container">
-                    <h4><b>Mangos</b></h4>
-                    <p>Price : $<span>4.50</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/banana.jpg">
-                <div class="container">
-                    <h4><b>Banana</b></h4>
-                    <p>Price : $<span>5.99</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/orange.jpg">
-                <div class="container">
-                    <h4><b>Orange</b></h4>
-                    <p>Price : $<span>5.99</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree lactoseFree organic none">
-                <img src="../images/grapes.jpg">
-                <div class="container">
-                    <h4><b>Grapes</b></h4>
-                    <p>Price : $<span>6.50</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <button class="accordion meat-products">Meat</button>
-    <div class="panel">
-        <div class="productsList">
-            <div class="card nonveg nop glutenFree lactoseFree organic none">
-                <img src="../images/chicken.jpg">
-                <div class="container">
-                    <h4><b>Chicken</b></h4>
-                    <p>Price : $<span>10.99</span></p>
-                </div>
-            </div>
-            <div class="card nonveg nop glutenFree lactoseFree organic none">
-                <img src="../images/beef.jpg">
-                <div class="container">
-                    <h4><b>Beef</b></h4>
-                    <p>Price : $<span>11.00</span></p>
-                </div>
-            </div>
-            <div class="card nonveg nop glutenFree lactoseFree none">
-                <img src="../images/sausages.jpg">
-                <div class="container">
-                    <h4><b>Sausages</b></h4>
-                    <p>Price : $<span>12.00</span></p>
-                </div>
-            </div>
-            <div class="card nonveg nop glutenFree none">
-                <img src="../images/bacon.jpg">
-                <div class="container">
-                    <h4><b>Bacon</b></h4>
-                    <p>Price : $<span>14.99</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <button class="accordion">Dairy</button>
-    <div class="panel">
-        <div class="productsList">
-            <div class="card veg nop none">
-                <img src="../images/milk.jpg">
-                <div class="container">
-                    <h4><b>Milk</b></h4>
-                    <p>Price : $<span>4.99</span></p>
-                </div>
-            </div>
-            <div class="card nonveg nop glutenFree lactoseFree none">
-                <img src="../images/eggs.jpg">
-                <div class="container">
-                    <h4><b>Eggs</b></h4>
-                    <p>Price : $<span>6.00</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree none">
-                <img src="../images/cheese.jpg">
-                <div class="container">
-                    <h4><b>Cheese</b></h4>
-                    <p>Price : $<span>6.50</span></p>
-                </div>
-            </div>
-            <div class="card veg nop none">
-                <img src="../images/yogurt.jpg">
-                <div class="container">
-                    <h4><b>Yogurt</b></h4>
-                    <p>Price : $<span>7.00</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <button class="accordion">Bakery</button>
-    <div class="panel">
-        <div class="productsList">
-            <div class="card veg nop glutenFree lactoseFree none">
-                <img src="../images/cake.jpg">
-                <div class="container">
-                    <h4><b>Cake</b></h4>
-                    <p>Price : $<span>9.99</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree lactoseFree none">
-                <img src="../images/muffins.jpg">
-                <div class="container">
-                    <h4><b>Muffins</b></h4>
-                    <p>Price : $<span>10.00</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <button class="accordion">Beverages</button>
-    <div class="panel">
-        <div class="productsList">
-            <div class="card veg nop glutenFree lactoseFree none">
-                <img src="../images/coke.jpg">
-                <div class="container">
-                    <h4><b>Coke</b></h4>
-                    <p>Price : $<span>0.99</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree lactoseFree none">
-                <img src="../images/sprite.jpg">
-                <div class="container">
-                    <h4><b>Sprite</b></h4>
-                    <p>Price : $<span>0.99</span></p>
-                </div>
-            </div>
-            <div class="card veg nop glutenFree lactoseFree none">
-                <img src="../images/juice.jpg">
-                <div class="container">
-                    <h4><b>Orange Juice</b></h4>
-                    <p>Price : $<span>1.99</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <button id="myBtn">Open Modal</button>
+    <button class="" id="myBtn">View Your Cart</button>
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Here is your Cart</h2><br>
+            <h2 class="model-heading">Here is your Cart</h2><br>
             <div class="cart-container"></div>
         </div>
     </div>
+
+    <footer>
+        <p class="footerText text">Website designed by Aksh Babbar</p>
+    </footer>
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/groceries.js"></script>

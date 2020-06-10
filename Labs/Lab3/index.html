@@ -11,35 +11,41 @@
 </head>
 
 <body>
+    <header>
+        <img id="logo" src=images/logo.png>
+    </header>
     <div class="topnav">
         <a class="active" href="index.html">User Preferences</a>
         <a href="pages/products.html">Products</a>
-        <a href="pages/cart.html">Cart</a>
     </div>
 
     <div class="user-preferences">
         <div class="veg-nveg">
             <p class="text">Are you a Vegetarian or a Non-Vegetarian ?</p>
-            <input type="radio" id="veg" name="category" value="veg">
-            <label for="category">Vegetarian</label>
-            <input type="radio" id="nonveg" name="category" value="nonveg">
-            <label for="category">Non-Vegetarian</label>
-            <input type="radio" id="none1" name="category" value="nop">
-            <label for="category">No Preference</label>
+            <input class="option" type="radio" id="veg" name="category" value="veg">
+            <label class="option" for="category">Vegetarian</label>
+            <input class="option" type="radio" id="nonveg" name="category" value="nonveg">
+            <label class="option" for="category">Non-Vegetarian</label>
+            <input class="option" type="radio" id="none1" name="category" value="nop">
+            <label class="option" for="category">No Preference</label>
         </div>
         <div class="preference">
             <p class="text">Choose your preferences:</p>
-            <input type="checkbox" id="gluten" name="preferences" value="glutenFree">
-            <label for="preferences">Gluten Free</label>
-            <input type="checkbox" id="lactose" name="preferences" value="lactoseFree">
-            <label for="preferences">Lactose Free</label>
-            <input type="checkbox" id="organic" name="preferences" value="organic">
-            <label for="preferences">Organic</label>
-            <input type="checkbox" id="none2" name="preferences" value="none">
-            <label for="preferences">No Preference</label>
+            <input class="option" type="checkbox" id="gluten" name="preferences" value="glutenFree">
+            <label class="option" for="preferences">Gluten Free</label>
+            <input class="option" type="checkbox" id="lactose" name="preferences" value="lactoseFree">
+            <label class="option" for="preferences">Lactose Free</label>
+            <input class="option" type="checkbox" id="organic" name="preferences" value="organic">
+            <label class="option" for="preferences">Organic</label>
+            <input class="option" type="checkbox" id="none2" name="preferences" value="none">
+            <label class="option" for="preferences">No Preference</label>
         </div>
-        <button class="submit">Submit Preferences</button>
+        <button class="submit text">Submit Preferences</button>
     </div>
+
+    <footer>
+        <p class="footerText text">Website designed by Aksh Babbar</p>
+    </footer>
 
     <script src="scripts/main.js"></script>
     <script src="scripts/groceries.js"></script>

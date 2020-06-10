@@ -33,5 +33,5 @@ $(".submit").click(function() {
     }
     localStorage.setItem("category", category);
     localStorage.setItem("prefs", preferences);
-    // window.location.href = "pages/products.html";
+    window.location.href = "pages/products.html";
 });

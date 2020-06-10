@@ -16,15 +16,15 @@ $(".card").one("click", function() {
 });
 
 
-$("#myBtn").click(function() {
+$("#myBtn").one("click", function() {
     var selectedItems = $(".card-selected");
     var addItems = selectedItems.map(function(index) {
         var outer = '<div class ="cart-item-container">';
-        var name = '<h3 class="text">' + $(this).find("h4").text() + '</h3>';
-        var price = '<p class="text">' + $(this).find("p").text() + '</p>';
+        var name = '<h3 class="cart-heading">' + $(this).find("h4").text() + '</h3>';
+        var price = '<p class="cart-text">' + $(this).find("p").text() + '</p>';
         var outerEnd = '</div>';
         $(".cart-container").append(outer, name, price, outerEnd);
     });
-    var final = "<p>Your Total Price is: $" + price + "</p>";
+    var final = '<p class="finalPrice">Your Total Price is: <b>$' + price + "</b></p>";
     $(".cart-container").append(final);
 });
