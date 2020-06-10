@@ -4,9 +4,9 @@ $(document).ready(function() {
     // var prefs = localStorage.getItem("prefs");
     var cat = Cookies.get("category");
     var prefs = Cookies.get("prefs");
-    alert(prefs);
-    prefs = cat + prefs.replaceAll(",", '');
-    $(prefs).css("display", "block");
+    prefs = prefs.replace(",", '');
+    var elem = cat + prefs;
+    $(elem).css("display", "block");
 });
 
 var price = 0;
