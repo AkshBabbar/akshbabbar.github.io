@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+#logo {
+    width: 75%;
+}
+
+.heading-font {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading {
+    border-bottom: 2px solid #000;
+    font-size: 45px;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2rem 0 2rem 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.carousel-item>img {
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+    filter: brightness(0.5);
+}
+
+.about-info,
+.service-info {
+    background-color: #f8f8f8;
+    padding-top: 2rem;
+}
+
+#image1 {
+    width: 100%;
+}
+
+.location-info,
+.expert-info {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#googleMap {
+    width: 100%;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-card {
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.service-card:hover {
+    border: 4px solid #000;
+    border-radius: 10px;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.card-img-top {
+    filter: brightness(0.8);
+}
+
+.btn-light {
+    border: 0.5px solid #000 !important;
+}
+
+.barbers>img {
+    width: 80%;
+    filter: brightness(1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 2rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.barber-info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+}
+
+.barbers:hover .barber-image {
+    filter: brightness(0.6);
+}
+
+.barbers:hover .barber-info {
+    opacity: 1;
+    transition: .5s ease;
+}
