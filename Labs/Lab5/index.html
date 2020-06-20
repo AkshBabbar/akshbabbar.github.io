@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab4 : Shear Trendz</title>
+    <title>Lab5 : Shear Trendz</title>
 
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/be6a020fdb.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,7 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="125">
     <nav class="navbar navbar-expand-md navbar-dark">
         <a class="navbar-brand text-center" href="#">
             <img id="logo" src="images/logo.jpg">
@@ -24,12 +25,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-item text nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item text nav-link" href="#story">My Story</a>
-                <a class="nav-item text nav-link" href="#location">Location</a>
-                <a class="nav-item text nav-link" href="#services">Services</a>
-                <a class="nav-item text nav-link" href="#experts">Experts</a>
-                <a class="nav-item text nav-link" href="#book">Book Appointment</a>
+                <a class="nav-item nav-link active" href="#carouselExampleIndicators">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#story">My Story</a>
+                <a class="nav-item nav-link" href="#location">Location</a>
+                <a class="nav-item nav-link" href="#services">Services</a>
+                <a class="nav-item nav-link" href="#experts">Experts</a>
+                <a class="nav-item nav-link" href="#book">Book Appointment</a>
             </div>
         </div>
     </nav>
@@ -105,6 +106,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="heading-font heading text-center">Services</h1>
+                    <p class="sub-heading text-center">Select the service you require</p>
                 </div>
             </div>
             <div class="row text">
@@ -113,8 +115,8 @@
                         <img class="card-img-top" src="images/service1.jpg">
                         <div class="card-body">
                             <h4 class="card-title heading-font">Haircut</h4>
-                            <p class="card-text text p-0 m-0">Price: $25</p>
-                            <a href="#" class="btn btn-light text">Learn More</a>
+                            <p class="card-text text p-0 m-0 price">Price: $<span>25</span></p>
+                            <div class="btn btn-light text select-service">Select Service</div>
                         </div>
                     </div>
                 </div>
@@ -123,8 +125,8 @@
                         <img class="card-img-top" src="images/service2.jpg">
                         <div class="card-body">
                             <h4 class="card-title heading-font">Fade</h4>
-                            <p class="card-text text p-0 m-0">Price: $30</p>
-                            <a href="#" class="btn btn-light text">Learn More</a>
+                            <p class="card-text text p-0 m-0 price">Price: $<span>30</span></p>
+                            <div class="btn btn-light text select-service">Select Service</div>
                         </div>
                     </div>
                 </div>
@@ -133,8 +135,8 @@
                         <img class="card-img-top" src="images/service6.jpg">
                         <div class="card-body">
                             <h4 class="card-title heading-font">Lining</h4>
-                            <p class="card-text text p-0 m-0">Price: $20</p>
-                            <a href="#" class="btn btn-light text">Learn More</a>
+                            <p class="card-text text p-0 m-0 price">Price: $<span>20</span></p>
+                            <div class="btn btn-light text select-service">Select Service</div>
                         </div>
                     </div>
                 </div>
@@ -143,8 +145,8 @@
                         <img class="card-img-top" src="images/service3.jpg">
                         <div class="card-body">
                             <h4 class="card-title heading-font">Beard</h4>
-                            <p class="card-text text p-0 m-0">Price: $25</p>
-                            <a href="#" class="btn btn-light text">Learn More</a>
+                            <p class="card-text text p-0 m-0 price">Price: $<span>25</span></p>
+                            <div class="btn btn-light text select-service">Select Service</div>
                         </div>
                     </div>
                 </div>
@@ -153,8 +155,8 @@
                         <img class="card-img-top" src="images/services4.jpg">
                         <div class="card-body">
                             <h4 class="card-title heading-font">Ladies Haircut</h4>
-                            <p class="card-text text p-0 m-0">Price: $40</p>
-                            <a href="#" class="btn btn-light text">Learn More</a>
+                            <p class="card-text text p-0 m-0 price">Price: $<span>40</span></p>
+                            <div class="btn btn-light text select-service">Select Service</div>
                         </div>
                     </div>
                 </div>
@@ -163,8 +165,8 @@
                         <img class="card-img-top" src="images/service5.jpg">
                         <div class="card-body">
                             <h4 class="card-title heading-font">Highlights</h4>
-                            <p class="card-text text p-0 m-0">Price: $150</p>
-                            <a href="#" class="btn btn-light text">Learn More</a>
+                            <p class="card-text text p-0 m-0 price">Price: $<span>150</span></p>
+                            <div class="btn btn-light text select-service">Select Service</div>
                         </div>
                     </div>
                 </div>
@@ -176,6 +178,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="heading-font heading text-center">Meet Our Experts</h1>
+                    <p class="sub-heading text-center">Select the expert you like</p>
                 </div>
             </div>
             <div class="row text">
@@ -227,10 +230,10 @@
                     <input type="text" class="form-control" id="phone" placeholder="Phone No">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="reqd-service" placeholder="Service Required">
+                    <input type="text" name="se" class="form-control btn btn-light" id="reqd-service" placeholder="Click here to select services">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="reqd-expert" placeholder="Preferred Expert">
+                    <input type="text" class="form-control btn btn-light" id="reqd-expert" placeholder="Click here to select an expert">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                     <input type="text" class="form-control" id="date" placeholder="Preferred Date">
@@ -248,6 +251,8 @@
     <footer>
         <p>Website designed by Aksh Babbar</p>
     </footer>
+
+    <script src="script/main.js"></script>
 
 </body>
 
