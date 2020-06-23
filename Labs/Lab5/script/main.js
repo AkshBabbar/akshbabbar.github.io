@@ -109,7 +109,7 @@ $(".submit-btn").on("click", function() {
     // of digits
     var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
     if ((filter.test(a) == false) || (a.length != 10)) {
-        // alert("Invalid Phone Number");
+        alert("Invalid Phone Number");
     }
     $('#exampleModal').on('shown.bs.modal', function() {
         $('#myInput').trigger('focus')
