@@ -136,8 +136,14 @@
     filter: brightness(0.8);
 }
 
+.book-form .btn-light {
+    background-color: #fff !important;
+    border-color: rgb(206, 212, 218) !important;
+}
+
 .btn-light {
-    border: 0.5px solid #000 !important;
+    background-color: #fff;
+    border-color: rgb(206, 212, 218) !important;
 }
 
 .btn-light.selected {
@@ -181,6 +187,11 @@
     transition: .5s ease;
 }
 
+.expert-card-selected>.barber-info {
+    opacity: 1;
+    transition: .5s ease;
+}
+
 .book-form {
     margin-top: 2rem;
     background-color: #fff;
@@ -203,20 +214,23 @@
     color: #fff !important;
 }
 
+input::placeholder,
+input.btn-light {
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
 .submit-btn {
     width: 40%;
 }
 
-.form-control.btn-light {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
+#ui-datepicker-div {
+    background: #fafafa;
+    width: 30%;
 }
 
-.form-control.btn-light:hover,
-.form-control.btn-light:active,
-.form-control.btn-light:focus {
-    background: transparent !important;
-    color: #000 !important;
+.ui-datepicker-calendar {
+    width: 100%;
 }
 
 footer {
@@ -232,4 +246,53 @@ footer>p {
     font-weight: 400;
     font-size: 25px;
     padding-top: 1.5rem;
+}
+
+.total-check {
+    cursor: pointer;
+    border: 1px solid #000;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.modal-title {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+#credit-card {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.card-body {
+    margin-top: 5%;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+.card-pay {
+    width: 80%;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+#reqd-service:hover,
+#reqd-expert:hover,
+#date:hover,
+#time:hover {
+    background: #fff !important;
+    color: #000 !important;
+    cursor: pointer;
+}
+
+.book-form input {
+    color: #000 !important;
+}
+
+#tooltip {
+    opacity: 0;
 }

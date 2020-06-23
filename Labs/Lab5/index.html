@@ -7,12 +7,14 @@
     <title>Lab5 : Shear Trendz</title>
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
     <script src="https://kit.fontawesome.com/be6a020fdb.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="125">
@@ -71,7 +73,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="heading-font heading text-center">My Story</h1>
+                    <h1 class="heading-font heading text-center"><i class="fas fa-history"></i> My Story</h1>
                 </div>
             </div>
             <div class="row text">
@@ -93,7 +95,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="heading-font heading text-center">Location</h1>
+                    <h1 class="heading-font heading text-center"><i class="far fa-compass"></i> Location</h1>
                     <div id="googleMap">
                         <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=45.4225899, -75.68347693398633&amp;q=75%20Laurier%20Ave%20E%20Ottawa%2C%20ON%20K1N%206N5+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">km radius map</a></iframe></div><br />
@@ -105,7 +107,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="heading-font heading text-center">Services</h1>
+                    <h1 class="heading-font heading text-center"><i class="fas fa-cut"></i> Services</h1>
                     <p class="sub-heading text-center">Select the service you require</p>
                 </div>
             </div>
@@ -177,7 +179,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="heading-font heading text-center">Meet Our Experts</h1>
+                    <h1 class="heading-font heading text-center"><i class="fas fa-user-tie"></i> Meet Our Experts</h1>
                     <p class="sub-heading text-center">Select the expert you like</p>
                 </div>
             </div>
@@ -186,24 +188,28 @@
                     <img class="barber-image" src="images/barber1.jpg">
                     <div class="barber-info">
                         <h4 class="heading-font">Wallace Bryan</h4>
+                        <div class="btn btn-light text select-expert">Select Expert</div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 barbers text-center">
                     <img class="barber-image" src="images/barber2.jpg">
                     <div class="barber-info">
                         <h4 class="heading-font">Percy Duke</h4>
+                        <div class="btn btn-light text select-expert">Select Expert</div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 barbers text-center">
                     <img class="barber-image" src="images/barber3.jpg">
                     <div class="barber-info">
                         <h4 class="heading-font">Conner Bain</h4>
+                        <div class="btn btn-light text select-expert">Select Expert</div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 barbers text-center">
                     <img class="barber-image" src="images/barber4.jpg">
                     <div class="barber-info">
                         <h4 class="heading-font">Claire Mora</h4>
+                        <div class="btn btn-light text select-expert">Select Expert</div>
                     </div>
                 </div>
             </div>
@@ -213,21 +219,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="heading-font heading text-center">Book Appointment</h1>
+                    <h1 class="heading-font heading text-center"><i class="far fa-calendar-check"></i> Book Appointment</h1>
                 </div>
             </div>
             <div class="row text book-form">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                    <input type="text" class="form-control text-center" id="fname" placeholder="First Name">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                    <input type="text" class="form-control text-center" id="lname" placeholder="Last Name">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="email" placeholder="Email">
+                    <input type="email" class="form-control text-center" id="email" placeholder="Email">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="phone" placeholder="Phone No">
+                    <input type="text" class="form-control text-center" id="phone" placeholder="Phone No">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                     <input type="text" name="se" class="form-control btn btn-light" id="reqd-service" placeholder="Click here to select services">
@@ -236,24 +242,67 @@
                     <input type="text" class="form-control btn btn-light" id="reqd-expert" placeholder="Click here to select an expert">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="date" placeholder="Preferred Date">
+                    <input type="text" class="form-control btn btn-light" id="date" placeholder="Preferred Date">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" id="time" placeholder="Preferred Time">
+                    <input type="text" class="form-control btn btn-light" id="time" placeholder="Preferred Time">
                 </div>
-                <div class="col-12 text-center">
-                    <div class="btn btn-light submit-btn">Submit</div>
+                <div class="col-12 text-center final-chk">
+                    <p id="tooltip">In case of cancellation, we charge a $10 fee</p>
+                    <div class="total-check">Click here to check your total</div>
+                    <div class="btn btn-light submit-btn" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-cc-visa"></i> Proceed to Pay</div>
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <img id="credit-card" src="images/card.png">
+                    <div class="container card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="mb-0">Card Number</p>
+                                <input type="text" class="form-control" id="cnum" maxlength="16" placeholder="xxxxxxxxxxxxxxxx">
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">Expiry</p>
+                                <input type="text" class="form-control" id="exp" placeholder="mm/yy">
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">CVV</p>
+                                <input type="text" class="form-control" id="cvv" maxlength="3" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div class="btn btn-light card-pay"> <i class="fab fa-cc-visa"></i> <b>Pay</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <footer>
         <p>Website designed by Aksh Babbar</p>
     </footer>
 
-    <script src="script/main.js"></script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
