@@ -2,92 +2,106 @@
 <html>
 
 <head>
-    <title>Survey Analysis Results</title>
+    <title>Survey Results</title>
 </head>
 
-<body style="background-color: #2d302e ; 
-                font-family: sans-serif; color: #F6F6F8">
-    <h1 style="text-align: center; color: #F6F6F8">Survey Results</h1>
-    <hr>
+<body>
+    <h2>Survey Results</h2>
+
 
     <h2>User Info</h2>
-    <h3>Name:</h3>
+    <h3>First Name:</h3>
     <ul style="list-style: none;">
         <% for (var i=0; i<results[0].length; i++){ %>
             <li>
-                <%= results[0][i].firstname %> :
+                <%= results[0][i].firstname %>:
                     <%= results[0][i].count %>
             </li>
             <% } %>
     </ul>
-    <h2>User Info</h2>
-    <h3>Name:</h3>
-    <ul style="list-style: none;">
-        <% for (var i=0; i<results[0].length; i++){ %>
-            <li>
-                <%= results[0][i].lastname %> :
-                    <%= results[0][i].count %>
-            </li>
-            <% } %>
-    </ul>
-    <h3>Gender</h3>
+    <h3>Last Name:</h3>
     <ul style="list-style: none;">
         <% for (var i=0; i<results[1].length; i++){ %>
             <li>
-                <%= results[1][i].gender %> :
+                <%= results[1][i].lastname %> :
                     <%= results[1][i].count %>
             </li>
             <% } %>
     </ul>
-    <h3>Opinion about Organization on Homepage (Rating out of 5):</h3>
+    <h3>Email:</h3>
     <ul style="list-style: none;">
         <% for (var i=0; i<results[2].length; i++){ %>
             <li>
-                <%= results[2][i].organization %> :
+                <%= results[2][i].email %> :
                     <%= results[2][i].count %>
             </li>
             <% } %>
     </ul>
-    <hr>
-
-    <h2>Content consumed most by Users</h2>
+    <h3>Phone</h3>
     <ul style="list-style: none;">
         <% for (var i=0; i<results[3].length; i++){ %>
             <li>
-                <%= results[3][i].mostUsed %> :
+                <%= results[3][i].phone %> :
                     <%= results[3][i].count %>
             </li>
             <% } %>
     </ul>
-    <hr>
 
-
-    <h2>IGN is User's main source of:</h2>
+    <h3>Preferred method of contact:</h3>
     <ul style="list-style: none;">
         <% for (var i=0; i<results[4].length; i++){ %>
             <li>
-                <%= results[4][i].newsFor %> :
+                <%= results[4][i].contact %> :
                     <%= results[4][i].count %>
             </li>
             <% } %>
     </ul>
-    <hr>
 
-    <h2>Additional Commets from Users:</h2>
+
+    <h3>Device used:</h3>
     <ul style="list-style: none;">
         <% for (var i=0; i<results[5].length; i++){ %>
             <li>
-                <%= results[5][i].comments %> :
+                <%= results[5][i].device %> :
                     <%= results[5][i].count %>
             </li>
             <% } %>
     </ul>
-    <hr>
+
+    <h3>How did you hear about us:</h3>
+    <ul style="list-style: none;">
+        <% for (var i=0; i<results[6].length; i++){ %>
+            <li>
+                <%= results[6][i].hearAboutUs %> :
+                    <%= results[6][i].count %>
+            </li>
+            <% } %>
+    </ul>
+
+    <h3>Website Easy to Navigate:</h3>
+    <ul style="list-style: none;">
+        <% for (var i=0; i<results[7].length; i++){ %>
+            <li>
+                <%= results[7][i].likert %> :
+                    <%= results[7][i].count %>
+            </li>
+            <% } %>
+    </ul>
+    <h3>Comments:</h3>
+    <ul style="list-style: none;">
+        <% for (var i=0; i<results[8].length; i++){ %>
+            <li>
+                <%= results[8][i].comments %> :
+                    <%= results[8][i].count %>
+            </li>
+            <% } %>
+    </ul>
+
 
 </body>
 
-<footer style="text-align: center; background-color: #2d302e; color: #F6F6F8; width: 100%; bottom:0;">
-    <p2>Aksh Babbar</p2>
+<footer style="text-align: center;">
+    <p>Website designed by Aksh Babbar</p>
 </footer>
 
 </html>

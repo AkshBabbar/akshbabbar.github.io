@@ -55,8 +55,8 @@ module.exports = function(app) {
                 email,
                 phone,
                 contact,
-                hearAboutUs,
                 device,
+                hearAboutUs,
                 likert,
                 comments
             ]
