@@ -20,6 +20,16 @@
             </li>
             <% } %>
     </ul>
+    <h2>User Info</h2>
+    <h3>Name:</h3>
+    <ul style="list-style: none;">
+        <% for (var i=0; i<results[0].length; i++){ %>
+            <li>
+                <%= results[0][i].lastname %> :
+                    <%= results[0][i].count %>
+            </li>
+            <% } %>
+    </ul>
     <h3>Gender</h3>
     <ul style="list-style: none;">
         <% for (var i=0; i<results[1].length; i++){ %>
