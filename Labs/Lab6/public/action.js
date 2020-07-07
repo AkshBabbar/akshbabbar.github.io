@@ -6,11 +6,9 @@ $(document).ready(function() {
             url: '/',
             data: $(this).serializeArray(), //req.body
             success: function(data) {
-                alert("Thank you for your time!");
-                // $("#sid").css("background-color", "#000033");
                 $("#sid").css("display", "none");
                 $("#sid").attr("disabled", true);
-                $("#afterSubmit").css("display", "block");
+                $("#thankYou").css("display", "block");
             }
         });
         return false;
