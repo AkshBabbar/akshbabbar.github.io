@@ -7,6 +7,10 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -29,12 +33,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles/style.css" />
     <title>SkinPros</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <div class="container-fluid section m-0 p-0">
+  <body data-spy="scroll" data-target=".navbar" data-offset="250">
+    <div class="container-fluid m-0 p-0">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
             <img id="logo" src="images/logo-footer.png" />
@@ -45,25 +47,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link font-text" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link font-text" href="#top">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-text" href="#">Skins</a>
+              <a class="nav-link font-text" href="#card-section">Skins</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-text" href="#">Shop</a>
+              <a class="nav-link font-text" href="#howto-section">How&nbsp;To</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-text" href="#">How&nbsp;To</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-text" href="#">Help</a>
+              <a class="nav-link font-text" href="#review-section">Review</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <div class="container-fluid section m-0 p-0">
+    <div class="container-fluid m-0 p-0" id="top">
         <div class="img-section">
             <img id="cover-img" src="images/cover-img.jpg" />
             <div class="centered">
@@ -72,14 +71,43 @@
             </div>
         </div>
     </div>
-    <div class="container section">
-        <div class="skins-header">
-            <h1 class="text-center">Skins</h1>
-            <p class="text-center">Browse through our wide variety of skins</p>
+
+    <div class="container-fluid section m-0 p-0" id="card-section">
+        <div class="section-header skins-header">
+            <h1 class="text-center">SKINS</h1>
+            <p class="text-center text-secondary font-text">BROWSE THROUGH OUR WIDE VARIETY OF SKINS</p>
         </div>
         <div class="container" id="root2">
-            
         </div>
     </div>
+
+    <div class="container-fluid section m-0 p-0" id="howto-section">
+      <div class="section-header skins-header">
+          <h1 class="text-center">HOW-TO</h1>
+          <p class="text-center text-secondary font-text">LEARN HOW TO APPLY YOUR SKIN</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <iframe id="youtube" src="https://www.youtube.com/embed/IfBnYxpLVG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <div class="container-fluid section m-0 p-0" id="review-section">
+      <div class="section-header skins-header">
+          <h1 class="text-center">REVIEW</h1>
+          <p class="text-center text-secondary font-text">PLEASE PROVIDE A REVIEW FOR OUR WEBSITE</p>
+      </div>
+      <div id="root"></div>
+    </div>
+
+    <footer class="container-fluid m-0 p-0 text-center">
+      <p>Website designed by Aksh Babbar(300034042)</p>
+    </footer>
+
+
+    <script src="./script.js"></script>
   </body>
 </html>

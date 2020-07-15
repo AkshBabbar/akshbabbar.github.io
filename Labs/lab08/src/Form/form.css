@@ -1,0 +1,53 @@
+.form{
+    box-shadow: 5px 10px 20px 1px  rgba(0, 0, 0, 0.253) !important;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 75% !important;
+}
+.form-header{
+    padding-top: 1rem;
+    font-family: 'Teko', sans-serif;
+}
+.form-input>input, .form-review>input{
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.review-font{
+    font-size: 25px;
+}
+
+.form-review>input{
+    width: 95%;
+    height: 100px;
+}
+
+.reviewBtn{
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    width: 50%;
+    margin: 1rem 0 2rem 0;
+}
+
+.reviewBtn:hover{
+    width: 65%;
+    transition: width 0.5s ease-in-out;
+    color: #fff;
+}
+
+.successBtn{
+    font-size: 25px;
+    width: 65%;
+    margin: 1rem 0 2rem 0;
+    /* display: none; */
+}
+
+.submitted{
+    padding: 4rem 0 4rem 0;
+}
