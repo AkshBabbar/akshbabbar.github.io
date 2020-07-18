@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import App2 from './App2';
 import * as serviceWorker from './serviceWorker';
 import Card from'./Cards/Cards';
 
@@ -12,13 +11,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App2 />
-//   </React.StrictMode>,
-//   document.getElementById('root2')
-// );
 
 ReactDOM.render(<Card />, document.getElementById("root2"));
 
