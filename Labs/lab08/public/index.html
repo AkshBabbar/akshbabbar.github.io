@@ -58,6 +58,11 @@
             <li class="nav-item">
               <a class="nav-link font-text" href="#review-section">Review</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link font-text" href="#">
+                <div id="google_translate_element"></div>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -109,5 +114,15 @@
 
 
     <script src="./script.js"></script>
+    <script> 
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en'
+        }, 'google_translate_element');
+      }
+      </script>
+      <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+      <script>
+      </script>
   </body>
 </html>

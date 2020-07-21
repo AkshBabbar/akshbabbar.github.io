@@ -13,22 +13,22 @@ class Cards extends Component{
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <Card imgsrc={img4} title="BLACK DRAGON" desc="Providing High Abrasion Resistance"/>
+                        <Card imgsrc={img4} title="BLACK DRAGON" desc="Provides High Abrasion Resistance"/>
                     </div>
                     <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <Card imgsrc={img2} title="DARK CAMO" desc="Perfect combination of Discrete and Stylish"/>
+                        <Card imgsrc={img2} title="DARK CAMO" desc="Discrete and Stylish"/>
                     </div>
                     <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <Card imgsrc={img3} title="DEEP SPACE" desc="Limited Edition Deep Gloss Glitter skin"/>
+                        <Card imgsrc={img3} title="DEEP SPACE" desc="Limited Edition Deep Gloss Glitter"/>
                     </div>
                     <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <Card imgsrc={img1} title="HONEYCOMB" desc="The best Grip Sensation and Style"/>
+                        <Card imgsrc={img1} title="HONEYCOMB" desc="Best Grip Sensation and Style"/>
                     </div>
                     <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <Card imgsrc={img5} title="MAJESTIC GOLD" desc="Elegance mixed with Precision"/>
+                        <Card imgsrc={img5} title="MAJESTIC GOLD" desc="Elegance and Precision"/>
                     </div>
                     <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <Card imgsrc={img6} title="WHITE CAMO" desc="Texture and Depth you can feel"/>
+                        <Card imgsrc={img6} title="WHITE CAMO" desc="Intense Texture and Depth"/>
                     </div>
                 </div>
             </div>

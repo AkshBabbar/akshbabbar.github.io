@@ -34,10 +34,12 @@ nav.navbar{
 
 .nav-link{
   color: #fff;
+  white-space: nowrap;
 }
 
 .nav-item{
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+  white-space: nowrap;
 } 
 
 .nav-item.active, .nav-item:hover{
@@ -124,3 +126,28 @@ footer>p{
   font-family: 'Teko', sans-serif;
   font-weight: 400;
 }
+
+.goog-logo-link{
+  display: none;
+}
+.skiptranslate.goog-te-gadget{
+  color: #000;
+}
+
+.goog-te-combo{
+  outline: none;
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 0px !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  } 
+body {
+  top: 0px !important; 
+  }
