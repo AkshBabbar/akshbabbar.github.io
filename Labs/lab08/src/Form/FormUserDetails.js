@@ -48,7 +48,7 @@ export class FormUserDetails extends Component {
                                         className="input-field"
                                         value = { email }
                                     />
-                                    {emailError ? <span className="validation valid">Valid</span>: <span className="validation invalid">Invalid</span>}
+                                    {emailError ? <span className="validation valid"><i class="fas fa-check-circle"></i>The email you entered is valid</span>: <span className="validation invalid">Please enter a valid email</span>}
                                 </div> 
                                 <div className="col-6 text-center form-input">
                                     <input 
@@ -58,7 +58,7 @@ export class FormUserDetails extends Component {
                                         className="input-field"
                                         value = { phone }
                                     />
-                                    {phoneError ? <span className="validation valid">Valid</span>: <span className="validation invalid">Invalid</span>}
+                                    {phoneError ? <span className="validation valid"><i class="fas fa-check-circle"></i>The phone number you entered is valid</span>: <span className="validation invalid">Please enter a valid phone number</span>}
                                 </div>
                                 <div className="col-12 text-center form-review">
                                     <input 
@@ -73,7 +73,7 @@ export class FormUserDetails extends Component {
                             <div className="row">
                                 <div className="col-12 text-center">
                                     <div className="btn reviewBtn font-text" onClick={chk ? this.continue : null}>
-                                        Review Submission
+                                        Review Submission <i class="fas fa-chevron-right"></i>
                                     </div>
                                     {chk ? null : <p className="validation">*Please fill all details correctly to proceed</p>}
                                 </div>

@@ -52,9 +52,12 @@ class Home extends Component {
               <div className="col-12 text-center">
                 <iframe
                   id="youtube"
-                  src="https://www.youtube.com/embed/IfBnYxpLVG8"
+                  src="https://www.youtube.com/embed/IfBnYxpLVG8?rel=0&modestbranding=1&autohide=1&showinfo=0"
                   frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; 
+                  encrypted-media; 
+                  gyroscope; 
+                  picture-in-picture"
                   allowfullscreen
                 ></iframe>
               </div>

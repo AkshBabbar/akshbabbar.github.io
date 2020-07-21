@@ -107,6 +107,10 @@ nav.navbar{
   height: 500px;
 }
 
+.ytp-title{
+  display: none !important;
+}
+
 .form-header{
   font-size: 40px;
 }
@@ -118,9 +122,10 @@ footer{
 }
 
 footer>p{
-  padding-top: 0.5rem;
+  padding-top: 0.7rem;
   font-family: 'Teko', sans-serif;
   font-weight: 400;
+  font-size: 25px;
 }
 
 .goog-logo-link{
@@ -150,7 +155,7 @@ body {
 
 .errormsg{
   font-family: 'Teko', sans-serif;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .errorPage>footer{
