@@ -9,7 +9,9 @@ export class FormUserDetails extends Component {
     }
 
     render() {
-        const { values, handleChange } = this.props;
+        const { 
+                values :{firstname, lastname, email, phone, review, emailError, phoneError, chk},
+                handleChange } = this.props;
         return (
             <div className ="container form p-0">
                 <div className="row">
@@ -26,6 +28,7 @@ export class FormUserDetails extends Component {
                                         onChange={handleChange('firstname')}
                                         placeholder="FIRST NAME"
                                         className="input-field"
+                                        value = { firstname }
                                     />
                                 </div> 
                                 <div className="col-6 text-center form-input">
@@ -34,6 +37,7 @@ export class FormUserDetails extends Component {
                                         onChange={handleChange('lastname')}
                                         placeholder="LAST NAME"
                                         className="input-field"
+                                        value = { lastname }
                                     />
                                 </div> 
                                 <div className="col-6 text-center form-input">
@@ -42,7 +46,9 @@ export class FormUserDetails extends Component {
                                         onChange={handleChange('email')}
                                         placeholder="EMAIL ID"
                                         className="input-field"
+                                        value = { email }
                                     />
+                                    {emailError ? <span className="validation valid">Valid</span>: <span className="validation invalid">Invalid</span>}
                                 </div> 
                                 <div className="col-6 text-center form-input">
                                     <input 
@@ -50,7 +56,9 @@ export class FormUserDetails extends Component {
                                         onChange={handleChange('phone')}
                                         placeholder="PHONE NO"
                                         className="input-field"
+                                        value = { phone }
                                     />
+                                    {phoneError ? <span className="validation valid">Valid</span>: <span className="validation invalid">Invalid</span>}
                                 </div>
                                 <div className="col-12 text-center form-review">
                                     <input 
@@ -58,12 +66,13 @@ export class FormUserDetails extends Component {
                                         onChange={handleChange('review')}
                                         placeholder="TELL US YOUR THOUGHTS ABOUT OUR WEBSITE"
                                         className="input-field"
+                                        value = { review }
                                     />
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12 text-center">
-                                    <div className="btn reviewBtn font-text" onClick={this.continue}>
+                                    <div className="btn reviewBtn font-text" onClick={chk ? this.continue : null}>
                                         Review Submission
                                     </div>
                                 </div>

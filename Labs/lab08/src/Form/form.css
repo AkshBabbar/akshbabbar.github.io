@@ -8,11 +8,22 @@
     padding-top: 1rem;
     font-family: 'Teko', sans-serif;
 }
+
+.validation{
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+.validation.valid{
+    color: lightgreen;
+}
+.validation.invalid{
+    color: red;
+}
 .form-input>input, .form-review>input{
     width: 90%;
     height: 50px;
     text-align: center;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
     font-family: 'Teko', sans-serif;
     font-weight: 500;
     font-size: 25px;
