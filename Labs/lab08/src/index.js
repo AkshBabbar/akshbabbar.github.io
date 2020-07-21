@@ -12,7 +12,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-ReactDOM.render(<Card />, document.getElementById("root2"));
+// ReactDOM.render(<Card />, document.getElementById("root2"));
 
 
 // If you want your app to work offline and load faster, you can change
