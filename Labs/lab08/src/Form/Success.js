@@ -7,7 +7,7 @@ export class Success extends Component{
                 <div className="row">
                     <div className="col-12">
                         <div className="submitted text-center">
-                            <p className="font-text">Your form has been submitted. Thank You</p>
+                            <p className="font-text success-text"><i class="far fa-check-circle"></i>   Your form has been submitted. Thank You</p>
                         </div>
                     </div>
                 </div>

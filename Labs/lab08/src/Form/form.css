@@ -62,3 +62,12 @@
 .submitted{
     padding: 4rem 0 4rem 0;
 }
+
+.success-text{
+    font-size: 30px;
+}
+
+.success-text>.fa-check-circle{
+    color: green;
+    padding-right: 0.5rem;
+}

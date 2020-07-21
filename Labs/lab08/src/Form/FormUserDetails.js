@@ -75,6 +75,7 @@ export class FormUserDetails extends Component {
                                     <div className="btn reviewBtn font-text" onClick={chk ? this.continue : null}>
                                         Review Submission
                                     </div>
+                                    {chk ? null : <p className="validation">*Please fill all details correctly to proceed</p>}
                                 </div>
                             </div>
                         </div>

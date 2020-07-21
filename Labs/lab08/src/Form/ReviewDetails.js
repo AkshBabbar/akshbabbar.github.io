@@ -49,12 +49,12 @@ export class ReviewDetails extends Component {
                             <div className="row">
                                 <div className="col-6 text-center">
                                     <div className="btn reviewBtn font-text" onClick={this.back}>
-                                        Back
+                                    <i class="fas fa-chevron-left"></i>  Back / Edit
                                     </div>
                                 </div>
                                 <div className="col-6 text-center">
                                     <div className="btn reviewBtn font-text submit-form" onClick={this.continue}>
-                                        Submit Form
+                                        Submit Form  <i class="fas fa-chevron-right"></i>
                                     </div>
                                 </div>
                             </div>
